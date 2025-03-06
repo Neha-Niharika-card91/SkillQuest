@@ -1,0 +1,35 @@
+import Footer from "./component/Footer";
+import Header from "./component/Header";
+import Sidebar from "./component/Sidebar";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Dashboard from "./pages/dashboard";
+import ECommerce from "./pages/ECommerce";
+import User from "./pages/User";
+import "./index.css";
+
+export default function App() {
+  return (
+    <div className="flex w-full flex-row bg-gray-200 h-screen">
+      <Sidebar />
+      <div className="flex flex-col w-full p-8">
+        <div className=" h-16">
+          <Header />
+        </div>
+
+        <div className="flex-grow overflow-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/ecommerce" element={<ECommerce />} />
+            <Route path="/users" element={<User />} />
+          </Routes>
+        </div>
+
+        <div className=" w-full h-16 p-2">
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+}
