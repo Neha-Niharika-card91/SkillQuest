@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, ShoppingCart, User, MoveRight } from "lucide-react";
+import { Home, ShoppingCart, User, ChevronRight } from "lucide-react";
 
 export default function Sidebar() {
   const links = [
@@ -8,7 +8,7 @@ export default function Sidebar() {
     { path: "/users", name: "User", icon: User },
   ];
   return (
-    <div className="flex flex-col justify-start bg-white p-2">
+    <div className="flex flex-col justify-start bg-white p-2 fixed-top">
       <div className="items-center">
         <Link to="/">
           <img src="./public/logo.png" />
@@ -22,7 +22,7 @@ export default function Sidebar() {
               <Link to={link.path} className="flex flex-row items-center gap-2">
                 <link.icon size={20} />
                 <span>{link.name}</span>
-                <MoveRight size={20} />
+                <ChevronRight size={20} />
               </Link>
             </div>
           ))}
