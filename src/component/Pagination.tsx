@@ -7,16 +7,15 @@ const Pagination = () => {
           <ChevronsLeft size={20} />
         </button>
 
-        {/* Page Number 1 */}
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        <button className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-blue-600">
           1
         </button>
 
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        <button className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-blue-600">
           2
         </button>
 
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        <button className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-blue-600 active">
           3
         </button>
 

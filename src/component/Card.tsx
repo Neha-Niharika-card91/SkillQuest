@@ -84,7 +84,7 @@ export default function Card() {
             </div>
           </div>
           <div className=" p-2">
-            <div className="font-semibold">{item.title}</div>
+            <div className="font-semibold ">{item.title}</div>
             <div>{item.description}</div>
           </div>
         </div>

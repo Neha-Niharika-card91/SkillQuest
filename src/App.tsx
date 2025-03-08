@@ -10,7 +10,7 @@ import "./index.css";
 
 export default function App() {
   return (
-    <div className="flex w-full flex-row bg-gray-200 ">
+    <div className="flex w-full flex-row bg-gray-200 font-sans text-sm">
       <Sidebar />
       <div className="flex flex-col w-full p-8">
         <div className=" h-16 fixed-top">
