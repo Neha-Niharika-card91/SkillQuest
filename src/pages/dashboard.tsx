@@ -29,15 +29,15 @@ export default function Dashboard() {
           </div>
           <div>
             <Course />
+            <div className="flex flex-row w-full items-center bg-white justify-between ">
+              <div className="flex flex-row justify-start flex-grow text-gray-500">
+                <p>Showing 1 to 5 of 25 entries</p>
+              </div>
+              <div className="flex justify-end">
+                <Pagination />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-row items-center justify-between px-4">
-        <div className="flex justify-start flex-grow text-gray-500">
-          <p>Showing 1 to 5 of 25 entries</p>
-        </div>
-        <div className="flex justify-end">
-          <Pagination />
         </div>
       </div>
     </div>

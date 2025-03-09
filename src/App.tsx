@@ -2,7 +2,6 @@ import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Sidebar from "./component/Sidebar";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Dashboard from "./pages/dashboard";
 import ECommerce from "./pages/ECommerce";
 import User from "./pages/User";
@@ -19,7 +18,7 @@ export default function App() {
 
         <div className="flex-grow  w-full h-150 overflow-auto">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/ecommerce" element={<ECommerce />} />
             <Route path="/users" element={<User />} />
