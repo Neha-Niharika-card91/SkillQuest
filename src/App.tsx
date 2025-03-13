@@ -6,6 +6,7 @@ import Dashboard from "./pages/dashboard";
 import ECommerce from "./pages/ECommerce";
 import User from "./pages/User";
 import "./index.css";
+import Profile from "./component/Profile";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/ecommerce" element={<ECommerce />} />
             <Route path="/users" element={<User />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
 

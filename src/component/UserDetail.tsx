@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Monitor,
   Crown,
@@ -10,7 +11,7 @@ import {
 } from "lucide-react";
 
 export default function UserDetail() {
-  const detail = [
+  const [detail, setDetail] = useState([
     {
       profile: "/Profile1.png",
       name: "Jordan Stevenson",
@@ -110,13 +111,27 @@ export default function UserDetail() {
       Status: "Pending",
       color: "bg-orange-200",
     },
-  ];
+  ]);
+
+  const handleClick = (index: number) => {
+    const newDetail = detail.filter((_, i) => i !== index);
+    setDetail(newDetail);
+  };
+  const [Visible, setVisible] = useState<number | null>(null);
+  const handleView = (index: number) => {
+    if (index == Visible) {
+      setVisible(null);
+    } else {
+      setVisible(index);
+    }
+  };
+
   return (
-    <div className="w-full h-full m-2 flex flex-grow ">
-      <table className="w-full border-collapse text-left ">
+    <div className="w-full h-full m-2 flex flex-grow">
+      <table className="w-full border-collapse text-left">
         <thead>
           <tr>
-            <th className="border-r-1 border-gray-400 ">USER</th>
+            <th className="border-r-1 border-gray-400">USER</th>
             <th className="border-r-1 border-gray-400 pl-2">ROLE</th>
             <th className="border-r-1 border-gray-400 pl-2">PLAN</th>
             <th className="border-r-1 border-gray-400 pl-2">BILLING</th>
@@ -139,13 +154,13 @@ export default function UserDetail() {
                 </div>
               </td>
               <td>
-                <div className="flex  px-2 justify-left items-center">
+                <div className="flex px-2 justify-left items-center">
                   <div className="pr-2">{item.icon}</div>
                   <div>{item.role}</div>
                 </div>
               </td>
-              <td className=" px-2 ">{item.plan}</td>
-              <td className=" px-2 ">{item.billing}</td>
+              <td className="px-2">{item.plan}</td>
+              <td className="px-2">{item.billing}</td>
               <td>
                 <span className={`${item.color} rounded-lg p-2 ml-2`}>
                   {item.Status}
@@ -153,8 +168,12 @@ export default function UserDetail() {
               </td>
               <td>
                 <div className="flex px-2 justify-between w-full">
-                  <Trash2 size={20} />
-                  <Eye size={20} />
+                  <Trash2
+                    size={20}
+                    className="cursor-pointer"
+                    onClick={() => handleClick(index)}
+                  />
+                  <Eye size={20} onClick={() => handleView(index)} />
                   <EllipsisVertical size={20} />
                 </div>
               </td>
@@ -162,6 +181,33 @@ export default function UserDetail() {
           ))}
         </tbody>
       </table>
+      {Visible !== null && (
+        <div className="fixed flex items-center justify-center bg-white bg-opacity-80 shadow p-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-full sm:w-96">
+            <img src={detail[Visible].profile} className="h-12 w-12 mx-auto" />
+            <div className="mt-4">
+              <div>
+                <strong>Name:</strong> {detail[Visible].name}
+              </div>
+              <div>
+                <strong>Email ID:</strong> {detail[Visible].id}
+              </div>
+              <div>
+                <strong>Role:</strong> {detail[Visible].role}
+              </div>
+              <div>
+                <strong>Plan:</strong> {detail[Visible].plan}
+              </div>
+              <div>
+                <strong>Billing:</strong> {detail[Visible].billing}
+              </div>
+              <div>
+                <strong>Status:</strong> {detail[Visible].Status}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

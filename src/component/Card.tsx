@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { RotateCw, Star, ChevronRight } from "lucide-react";
 
 export default function Card() {
   const data = [
@@ -136,13 +136,27 @@ export default function Card() {
           <div className="flex justify-between p-2">
             <div className={`p-2 rounded ${item.color}`}>{item.tag}</div>
             <div className="flex">
-              {item.rating} <Star className="text-yellow-500" size={20} />{" "}
+              {item.rating} <Star className="text-yellow-500" size={20} />
               {item.value}
             </div>
           </div>
           <div className="p-2">
             <div className="font-semibold">{item.title}</div>
             <p>{item.description}</p>
+          </div>
+          <div className="flex flex-row  justify-between p-2">
+            <button>
+              <div className="flex flex-row rounded-lg shadow p-2 bg-gray-200">
+                <RotateCw className="text-gray-500 mr-1" size={20} />
+                Start Over
+              </div>
+            </button>
+            <button>
+              <div className="flex flex-row rounded-lg shadow p-2 bg-blue-200">
+                Continue
+                <ChevronRight className="text-blue-500 mr-1" size={20} />
+              </div>
+            </button>
           </div>
         </div>
       ))}
