@@ -12,7 +12,7 @@ import {
 export default function UserDetail() {
   const detail = [
     {
-      profile: "./public/Profile1.png",
+      profile: "/Profile1.png",
       name: "Jordan Stevenson",
       id: "jordan.stevenson",
       icon: <Crown size={20} className="text-blue-500" />,
@@ -23,7 +23,7 @@ export default function UserDetail() {
       color: "bg-orange-200",
     },
     {
-      profile: "./public/Profile2.png",
+      profile: "/Profile2.png",
       name: "Richard Payne",
       id: "richad247",
       icon: <SquarePen size={20} className="text-orange-400" />,
@@ -34,7 +34,7 @@ export default function UserDetail() {
       color: "bg-green-200",
     },
     {
-      profile: "./public/Profile3.png",
+      profile: "/Profile3.png",
       name: "Jennifer Summers",
       id: "summers.45",
       icon: <Monitor size={20} className="text-red-400" />,
@@ -45,7 +45,7 @@ export default function UserDetail() {
       color: "bg-green-200",
     },
     {
-      profile: "./public/Profile4.png",
+      profile: "/Profile4.png",
       name: "Mr. Justin Richardson",
       id: "jr.3734",
       icon: <SquarePen size={20} className="text-orange-400" />,
@@ -56,7 +56,7 @@ export default function UserDetail() {
       color: "bg-orange-200",
     },
     {
-      profile: "./public/Profile5.png",
+      profile: "/Profile5.png",
       name: "Nicholas Tanner",
       id: "nicholas.t",
       icon: <ChartPie size={20} className="text-blue-400" />,
@@ -67,7 +67,7 @@ export default function UserDetail() {
       color: "bg-green-200",
     },
     {
-      profile: "./public/Profile1.png",
+      profile: "/Profile1.png",
       name: "Crystal Mays",
       id: "mays.754",
       icon: <SquarePen size={20} className="text-orange-400" />,
@@ -78,7 +78,7 @@ export default function UserDetail() {
       color: "bg-orange-200",
     },
     {
-      profile: "./public/Profile2.png",
+      profile: "/Profile2.png",
       name: "Mary Garcia",
       id: "mary.garcia",
       icon: <ChartPie size={20} className="text-blue-400" />,
@@ -89,7 +89,7 @@ export default function UserDetail() {
       color: "bg-violet-200",
     },
     {
-      profile: "./public/Profile3.png",
+      profile: "/Profile3.png",
       name: "Megan Roberts",
       id: "roberts.3456",
       icon: <User size={20} className="text-green-400" />,
@@ -100,7 +100,7 @@ export default function UserDetail() {
       color: "bg-green-200",
     },
     {
-      profile: "./public/Profile4.png",
+      profile: "/Profile4.png",
       name: "Joseph Oliver",
       id: "joseph.87",
       icon: <User size={20} className="text-green-400" />,

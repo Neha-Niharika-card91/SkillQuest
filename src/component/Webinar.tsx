@@ -5,7 +5,7 @@ export default function Webinar() {
     <div className="flex flex-col">
       <div className="m-1 ">
         <img
-          src="./public/Image (1).jpg"
+          src="/Image (1).jpg"
           alt="img-pg"
           className="object-cover items-center align-center"
         />
