@@ -9,14 +9,14 @@ import "./index.css";
 
 export default function App() {
   return (
-    <div className="flex w-full flex-row bg-gray-200 font-sans text-sm">
+    <div className="flex w-full flex-row bg-gray-200 font-sans text-sm mt-5">
       <Sidebar />
-      <div className="flex flex-col w-full p-8">
-        <div className=" h-16 fixed-top">
+      <div className="flex flex-col w-full h-screen p-8 ml-60">
+        <div className=" fixed top-0 left-64 right-0 h-16 ">
           <Header />
         </div>
 
-        <div className="flex-grow  w-full h-150 overflow-auto">
+        <div className="flex-grow left-64 right-0 h-100 overflow-auto">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
@@ -25,7 +25,7 @@ export default function App() {
           </Routes>
         </div>
 
-        <div className=" w-full h-16 p-2 fixed-bottom">
+        <div className="ml-60 h-16 p-2 fixed bottom-0 right-0 left-0">
           <Footer />
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Dashboard() {
           <AssignentProgress />
         </div>
       </div>
-      <div className="h-70  p-2 m-2">
+      <div className="h-90  p-2 m-2">
         <div className="flex flex-col bg-white p-4 rounded-lg shadow-md h-full overflow-auto">
           <div className="mb-4 flex justify-between items-center">
             <h2 className="text-lg font-semibold">Course you are taking</h2>

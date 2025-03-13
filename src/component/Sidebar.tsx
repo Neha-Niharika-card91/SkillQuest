@@ -8,7 +8,7 @@ export default function Sidebar() {
     { path: "/users", name: "User", icon: User },
   ];
   return (
-    <div className="flex flex-col justify-start bg-white p-2 fixed-top">
+    <div className="flex flex-col justify-start bg-white p-2 w-60 h-screen fixed left-0 top-0 bg-white shadow-md">
       <div className="items-center">
         <Link to="/">
           <img src="./public/logo.png" />
