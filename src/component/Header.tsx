@@ -13,12 +13,12 @@ export default function Header() {
       />
 
       {isVisible && (
-        <div className="absolute right-0 mt-12 w-40 bg-white border rounded-lg shadow-lg">
+        <div className="absolute right-2 top-15 w-40 bg-white rounded-lg shadow-lg border border-gray-200">
           <ul className="p-2 space-y-2">
-            <li className="p-2 hover:bg-gray-100 cursor-pointer">
+            <li className="p-2 hover:bg-gray-100 cursor-pointer rounded-md transition duration-200 ease-in-out">
               <Link to="/">Home</Link>
             </li>
-            <li className="p-2 hover:bg-gray-100 cursor-pointer">
+            <li className="p-2 hover:bg-gray-100 cursor-pointer rounded-md transition duration-200 ease-in-out">
               <Link to="/profile">Profile</Link>
             </li>
           </ul>
