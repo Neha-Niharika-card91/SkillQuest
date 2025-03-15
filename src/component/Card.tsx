@@ -122,15 +122,15 @@ export default function Card() {
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full">
       {data.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col bg-white p-4 rounded-lg shadow-md"
+          className="flex flex-col bg-white p-4 rounded-lg shadow-md "
         >
           <img
             src={item.image}
-            className="w-full h-48 object-cover rounded-t-lg p-2"
+            className="w-full object-cover rounded-t-lg p-2"
             alt={item.title}
           />
           <div className="flex justify-between p-2">
