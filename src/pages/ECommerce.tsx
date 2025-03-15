@@ -11,7 +11,7 @@ export default function ECommerce() {
         </div>
 
         <div className="flex flex-grow w-full items-center justify-end p-2">
-          <select className="border p-2 m-2 w-200">
+          <select className="border p-2 m-2 w-100">
             <option>All Courses</option>
             <option>Free</option>
             <option>Purchased</option>

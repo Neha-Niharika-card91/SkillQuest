@@ -24,7 +24,7 @@ export default function Dashboard() {
             <input
               type="text"
               placeholder="Search Course"
-              className="border rounded p-2"
+              className="border rounded p-2 w-100"
             />
           </div>
           <div>
