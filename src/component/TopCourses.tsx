@@ -51,19 +51,23 @@ export default function TopCourses() {
         </div>
       </div>
 
-      <div className="flex items-between">
-        <table className="border-collapse w-full  ">
-          <tbody className=" m-2 p-2 text-center">
+      <div className="flex w-full">
+        <table className="border-collapse w-full">
+          <tbody className="w-full text-center">
             {data.map((item, index) => (
-              <tr key={index} className=" p-2 ">
-                <td className="h-2 w-2 ">
-                  <div className={` p-2 rounded-sm  ${item.color}`}>
+              <tr key={index} className="h-full items-center">
+                <td className="p-2 w-fit">
+                  <div className={`p-2 rounded-sm ${item.color}`}>
                     {item.icon}
                   </div>
                 </td>
-                <td className=" p-2 ">{item.text}</td>
-                <td>
-                  <div className="m-2 bg-gray-200 rounded-sm ">{item.view}</div>
+
+                <td className="p-2 w-full">{item.text}</td>
+
+                <td className="p-2 w-fit">
+                  <div className="m-2 bg-gray-200 rounded-sm p-1">
+                    {item.view}
+                  </div>
                 </td>
               </tr>
             ))}

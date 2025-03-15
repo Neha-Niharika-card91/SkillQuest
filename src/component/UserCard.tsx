@@ -40,19 +40,19 @@ export default function UserCard() {
     },
   ];
   return (
-    <div className="flex flex-row flex-grow justify-between">
+    <div className="grid grid-cols-4 gap-x-4 w-full ">
       {user.map((item, index) => (
         <div
-          className="flex flex-row bg-white w-55 p-4 m-2 justify-between shadow-lg rounded-sm"
           key={index}
+          className="bg-white p-2 justify-between shadow-lg rounded-sm flex flex-wrap"
         >
-          <div className="flex flex-col">
-            <div> {item.title}</div>
-            <div className="flex justify-evenly items-center">
+          <div className="flex flex-col space-y-1">
+            <div>{item.title}</div>
+            <div className="flex justify-start items-center">
               <span className="text-lg">{item.number}</span>
               <span className={`${item.c1} text-xs`}>{item.val}</span>
             </div>
-            <div>{item.text} </div>
+            <div>{item.text}</div>
           </div>
           <div className={`flex ${item.color} p-2 h-7 items-center`}>
             {item.icon}

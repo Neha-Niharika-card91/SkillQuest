@@ -75,7 +75,7 @@ export default function Course() {
     },
   ];
   return (
-    <div className="flex flex-grow  h-full w-full ">
+    <div className="flex flex-grow h-full w-full ">
       <table className="w-full border-collapse  text-left p-2 m-3">
         <thead className="border border-gray-300">
           <tr className=" justify-between border-right ">

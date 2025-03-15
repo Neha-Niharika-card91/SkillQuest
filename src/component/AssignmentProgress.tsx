@@ -38,16 +38,16 @@ export default function AssignmentProgress() {
       <div className="flex flex-col gap-4 ">
         {content.map((item, index) => (
           <div key={index}>
-            <div className="flex flex-row justify-between">
-              <div className="p-1 m-1 flex justify-center h-10 w-10">
+            <div className="flex flex-row justify-between items-center">
+              <div className="p-1 m-1 flex justify-center h-10 w-10 ">
                 <RadialChart percentage={item.per} color={item.color} />
               </div>
-              <div className="p-2 flex flex-col text-wrap">
+              <div className="p-2 flex flex-col text-wrap w-full">
                 <p className="text-sm">{item.title}</p>
                 <p className="text-xs">{item.task}</p>
               </div>
-              <div className="m-2 flex items-center bg-gray-100">
-                <Star size={20} className="text-yellow-500 " />
+              <div className=" flex items-center ">
+                <Star size={20} className="text-gray-500 bg-gray-100 p-1" />
               </div>
             </div>
           </div>

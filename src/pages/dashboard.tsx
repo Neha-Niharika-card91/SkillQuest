@@ -6,8 +6,8 @@ import Course from "../component/Course";
 export default function Dashboard() {
   return (
     <div className="bg-grey-100 ">
-      <div className="grid grid-cols-3 gap-4 h-80  p-2 m-2">
-        <div className="flex flex-col bg-white p-4 rounded-lg shadow-md overflow-auto">
+      <div className="grid grid-cols-3 gap-4 h-100 p-2 m-2 ">
+        <div className="flex flex-col bg-white p-4 rounded-lg shadow-md overflow-auto ">
           <TopCourses />
         </div>
         <div className="flex flex-col bg-white p-4 rounded-lg shadow-md overflow-auto ">
@@ -17,7 +17,7 @@ export default function Dashboard() {
           <AssignentProgress />
         </div>
       </div>
-      <div className="h-90  p-2 m-2">
+      <div className="h-full  p-2 m-2 ">
         <div className="flex flex-col bg-white p-4 rounded-lg shadow-md h-full overflow-auto">
           <div className="mb-4 flex justify-between items-center">
             <h2 className="text-lg font-semibold">Course you are taking</h2>
@@ -30,7 +30,7 @@ export default function Dashboard() {
           <div>
             <Course />
             <div className="flex flex-row w-full items-center bg-white justify-between ">
-              <div className="flex flex-row justify-start flex-grow text-gray-500">
+              <div className="flex flex-row justify-start flex-grow text-gray-500 ">
                 <p>Showing 1 to 5 of 25 entries</p>
               </div>
               <div className="flex justify-end">
